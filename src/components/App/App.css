@@ -1,0 +1,85 @@
+.quote-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.quote-box{
+  padding: 15px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 5px;
+  background: white;
+}
+
+.quote{
+  font-size: 22px;
+  text-align: center;
+} 
+
+.quote::before{
+  content: '"';
+  font-size: 52px;
+}
+
+.author{
+  position: relative;
+  text-align: end;
+}
+
+.author::before{
+  content: '-   ';
+  top: -20px;
+  right: 120px;
+}
+
+.bottom-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.new-quote{
+  align-self: center;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.fade-in{
+  animation: fadein .5s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button {
+  text-decoration: none;
+  display: block;
+  width: 30px;
+  text-align: center;
+  padding: 10px 10px ;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+}
